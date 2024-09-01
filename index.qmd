@@ -9,5 +9,5 @@ listing:
   sort-ui: true
   filter-ui: true
   feed: true
-page-layout: full
+page-layout: article
 ---
