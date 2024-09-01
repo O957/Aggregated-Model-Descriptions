@@ -1,9 +1,9 @@
 project:
   type: website
 website:
-  title: "<span style=\"font-variant-caps: small-caps\">A Statistical Modeling Guild</span>"
+  title: "A STATISTICAL MODELING GUILD"
   description: "Website containing descriptions, documentation, and demonstrations for models that the author and friends have built."
-  site-url: "https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions"
+  site-url: "https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/"
   search:
     location: navbar
     type: overlay
