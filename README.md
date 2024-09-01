@@ -93,17 +93,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-(__next__) Run `quarto publish gh-pages`, which will
-
+(__next__) Commit the above changes. Then get a `gh-pages` branch via
 
 ```
-? Publish site to https://AFg6K7h4fhy2.github.io/Aggregated-Model-Descriptions/ using gh-pages? (Y/n) › Yes
-Switched to a new branch 'gh-pages'
-No .pre-commit-config.yaml file was found
-- To temporarily silence this, run `PRE_COMMIT_ALLOW_NO_CONFIG=1 git ...`
-- To permanently silence this, install pre-commit with the --allow-missing-config option
-- To uninstall pre-commit run `pre-commit uninstall`
-Your branch is up to date with 'origin/main'.
+git checkout --orphan gh-pages
+git reset --hard # make sure all changes are committed before running this!
+PRE_COMMIT_ALLOW_NO_CONFIG=1 git commit --allow-empty -m "Initialising gh-pages branch"
+git push --set-upstream origin gh-pages
 ```
+
+switch back to main with `git checkout main`.
 
 (__next__) On the GitHub interface, go into `settings`, click `Pages`, have `source` set as _Deploy from a branch_, and have `Branch` set as `main`, click `Save`.
