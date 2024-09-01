@@ -61,16 +61,6 @@ The content of this `404` page is source from Quarto's suggested Page Not Found 
 
 (__next__) Enter `touch .nojekyll`
 
-(__next__) Commit your changes before running:
-
-```
-git checkout --orphan gh-pages
-git reset --hard # make sure all changes are committed before running this!
-git commit --allow-empty -m "Initialising gh-pages branch"
-git push origin gh-pages
-git push --set-upstream origin gh-pages
-```
-
 (__next__) On the GitHub interface, go to `settings`, click `Actions`, click `General`, unclick the default _Read repository contents and packages permissions_ and then click _Read and write permissions_, click `Save`.
 
 (__next__) In `./.github/workflows/` create a file called `publish.yaml` and add the following to it:
@@ -103,6 +93,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-(__next__) On the GitHub interface, go into `settings`, click `Pages`, have `source` set as _Deploy from a branch_, and have `Branch` set as `main`, click `Save`.
+(__next__) Run `quarto publish gh-pages`, which will
 
-(__next__)
+
+```
+? Publish site to https://AFg6K7h4fhy2.github.io/Aggregated-Model-Descriptions/ using gh-pages? (Y/n) › Yes
+Switched to a new branch 'gh-pages'
+No .pre-commit-config.yaml file was found
+- To temporarily silence this, run `PRE_COMMIT_ALLOW_NO_CONFIG=1 git ...`
+- To permanently silence this, install pre-commit with the --allow-missing-config option
+- To uninstall pre-commit run `pre-commit uninstall`
+Your branch is up to date with 'origin/main'.
+```
+
+(__next__) On the GitHub interface, go into `settings`, click `Pages`, have `source` set as _Deploy from a branch_, and have `Branch` set as `main`, click `Save`.
