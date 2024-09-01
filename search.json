@@ -9,23 +9,37 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": ".",
+    "title": "A Guild Of Statistical Modeling",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 1, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2024\n\n\n1 min\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "[placeholder]"
+  },
+  {
+    "objectID": "about.html#configuration-specification-language-csl-files",
+    "href": "about.html#configuration-specification-language-csl-files",
+    "title": "About",
+    "section": "2.1 Configuration Specification Language (CSL) Files",
+    "text": "2.1 Configuration Specification Language (CSL) Files\nThe csl style comes from a slightly modified version of Vodohospodářské technicko-ekonomické informace (English) (2016-03-10 11:08:39); the original version can be downloaded from Zotero’s style repository."
+  },
+  {
+    "objectID": "about.html#fonts",
+    "href": "about.html#fonts",
+    "title": "About",
+    "section": "2.2 Fonts",
+    "text": "2.2 Fonts\nThe font for code blocks is Iosevka, specifically this version.\nThe body font the Schola theme of the TeX Gyre collection, which can be found here.\nTo download the TeX Gyre fonts I’ve used, click here."
   },
   {
     "objectID": "CONTRIBUTING.html",
     "href": "CONTRIBUTING.html",
-    "title": "Contributing Guidelines",
+    "title": "1 Contributing Guidelines",
     "section": "",
-    "text": "Contributing Guidelines\nThe author(s) of this repository appreciate external feedback and contributions. To improve this feedback process, we urge you to read and adhere to the following guidelines:\n\nProvide clear, evidenced arguments for your changes, where possible this will aid future onlookers in understanding why certain features came to be the way they are. Additionally, this facilitates the author(s) in learning why and how they’ve erred. Finally, taking the time to make your arguments clearer can prevent the creation of feedback that is misguided, incorrect, or inadequate relative to other possible changes.\n\n[additional guidelines pending]"
+    "text": "1 Contributing Guidelines\nThe author(s) of this repository appreciate external feedback and contributions. To improve this feedback process, we urge you to read and adhere to the following guidelines:\n\nProvide clear, evidenced arguments for your changes, where possible this will aid future onlookers in understanding why certain features came to be the way they are. Additionally, this facilitates the author(s) in learning why and how they’ve erred. Finally, taking the time to make your arguments clearer can prevent the creation of feedback that is misguided, incorrect, or inadequate relative to other possible changes.\n\n[additional guidelines pending]"
   },
   {
     "objectID": "posts/welcome/index.html",

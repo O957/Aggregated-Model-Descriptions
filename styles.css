@@ -1,1 +1,114 @@
 /* css styles */
+@font-face {
+    font-family: 'TeX Gyre Schola';
+    src: url('./assets/fonts/tex-gyre/texgyreschola-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'TeX Gyre Schola';
+    src: url('./assets/fonts/tex-gyre/texgyreschola-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeX Gyre Schola';
+    src: url('./assets/fonts/tex-gyre/texgyreschola-italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TeX Gyre Schola';
+    src: url('./assets/fonts/tex-gyre/texgyreschola-bolditalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('./assets/fonts/iosevka/Iosevka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('./assets/fonts/iosevka/Iosevka-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('./assets/fonts/iosevka/Iosevka-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+body {
+    font-family: 'TeX Gyre Schola', serif;
+    background-color: #f4f1eb;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+a {
+    color: #993333;
+}
+
+a:hover {
+    color: rgb(255, 21, 21);
+}
+
+.quarto-title-banner {
+    margin: 0px;
+    padding-bottom: 0em;
+}
+
+
+#TOC a {
+    color: black;
+}
+
+#TOC a:hover {
+    color: rgb(255, 21, 21);
+}
+
+#TOC a:visited {
+    color: #993333;
+}
+
+#TOC a.active {
+    color: #993333 !important;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active {
+    color: rgb(255, 21, 21);
+}
+
+#quarto-appendix.default {
+    background-color: #f4f1eb;
+}
+
+#quarto-appendix.default .quarto-appendix-heading {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-family: 'TeX Gyre Schola', serif;
+    font-size: 2.2rem !important;
+}
+
+code {
+    color: gray;
+}
+
+pre, code {
+    font-family: 'Iosevka', monospace;
+}
