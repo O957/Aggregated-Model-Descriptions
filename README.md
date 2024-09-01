@@ -1,7 +1,7 @@
 # Aggregated Model Descriptions
 
 
-This repository, prior to the creation of the associated website, via `tree`: 
+This repository, prior to the creation of the associated website, via `tree`:
 
 ```
 .
@@ -61,7 +61,7 @@ The content of this `404` page is source from Quarto's suggested Page Not Found 
 
 (__next__) Enter `touch .nojekyll`
 
-(__next__) Commit your changes before running: 
+(__next__) Commit your changes before running:
 
 ```
 git checkout --orphan gh-pages
@@ -105,4 +105,4 @@ jobs:
 
 (__next__) On the GitHub interface, go into `settings`, click `Pages`, have `source` set as _Deploy from a branch_, and have `Branch` set as `main`, click `Save`.
 
-(__next__) 
+(__next__)
