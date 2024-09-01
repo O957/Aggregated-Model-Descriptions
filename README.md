@@ -1,5 +1,13 @@
 # Aggregated Model Descriptions
 
+_This repository contains a website with descriptions and some documentation for models that the author and friends have built._
+
+## Writing A Model Description
+
+[placeholder]
+
+
+## Creating The Skeleton Of The Website
 
 This repository, prior to the creation of the associated website, via `tree`:
 
@@ -104,4 +112,14 @@ git push --set-upstream origin gh-pages
 
 switch back to main with `git checkout main`.
 
-(__next__) On the GitHub interface, go into `settings`, click `Pages`, have `source` set as _Deploy from a branch_, and have `Branch` set as `main`, click `Save`.
+(__next__) On the GitHub interface, go into `settings`, click `Pages`, have `source` set as _Deploy from a branch_, and have `Branch` set as `gh-pages`, click `Save`.
+
+(__finally__) Modify content to your liking, including `style.css`, `about.qmd`, `./posts`. This site includes edits made to:
+
+* an `assets` folder
+* the `about.qmd` page
+* the favicon, which has to be perfectly square
+* the posts in `./posts`
+* the main page `index.qmd`
+* the style of the site `style.css`
+* the site information in `_quarto.yml

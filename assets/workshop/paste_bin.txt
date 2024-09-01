@@ -1,0 +1,163 @@
+
+NOTES ON FUNCTIONALITY
+
+Should be able to take different pages and turn them each into PDF
+and then merge them into a book.
+
+
+COLLECTIONS QMD
+
+  - id: reviews
+    contents: "/collections/reviews/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: estimates
+    contents: "/collections/estimates/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: ratings
+    contents: "/collections/ratings/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: exercises
+    contents: "/collections/exercises/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: bets
+    contents: "/collections/bets/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: photos
+    contents: "/collections/photos/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: papers
+    contents: "/collections/papers/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: resources
+    contents: "/collections/resources/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+  - id: predictions
+    contents: "/collections/predictions/*.qmd"
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    type: table
+    categories: true
+    fields: [title, date, reading-time]
+
+
+The author's notes, estimates, photos, bets, specimens, reviews, ratings, solved exercises, and predictions, along with aggregated resources relevant to the author's work and life
+
+<!-- # Notes
+
+_Notes the author has taken._
+
+:::{#notes}
+:::
+
+# Reviews
+
+_Reviews the author has made._
+
+:::{#reviews}
+:::
+
+# Predictions
+
+_Predictions the author has made._
+
+:::{#predictions}
+:::
+
+# Estimates
+
+_Estimates the author has made._
+
+:::{#estimates}
+:::
+
+# Bets
+
+_Bets the author has made._
+
+:::{#bets}
+:::
+
+# Ratings
+
+_Ratings that the author has given to different entities._
+
+:::{#ratings}
+:::
+
+# Exercises
+
+_Exercises the author has completed._
+
+:::{#exercises}
+:::
+
+# Photos
+
+_Photos the author has taken, usually in context of experiences the author believes personally worthwhile to describe._
+
+:::{#photos}
+:::
+
+# Papers
+
+_Paper sections relevant to the author's work or that the author believes important to be able to easily reference._
+
+:::{#papers}
+:::
+
+# Resources
+
+_Resources for the author to reference._
+
+:::{#resources}
+:::
+
+# Fauna
+
+_The author's written and accumulated description of fauna._
+
+## NJ Late Cretaceous
+
+:::{#njlc_fauna}
+::: -->

@@ -1,16 +1,23 @@
 project:
   type: website
-
 website:
-  title: "."
+  title: "A Guild Of Statistical Modeling"
+  description: "Website containing descriptions, documentation, and demonstrations for models that the author and friends have built. "
+  search:
+    location: navbar
+    type: overlay
   navbar:
+    background: gray
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/AFg6K7h4fhy2
+  page-footer:
+    left: "Copyright 2024, AFg6K7h4fhy2"
+  favicon: icon.jpg
 format:
   html:
-    theme: cosmo
     css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
