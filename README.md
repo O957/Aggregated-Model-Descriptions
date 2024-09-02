@@ -6,7 +6,6 @@ _This repository contains a website with descriptions and some documentation for
 
 [placeholder]
 
-
 ## Creating The Skeleton Of The Website
 
 This repository, prior to the creation of the associated website, via `tree`:
