@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "A STATISTICAL MODELING GUILD",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nA Multilevel Regression Model For Tornadoes, In Python\n\n\n\n\n\nPlaceholder.\n\n\n\n\n\nSep 1, 2024\n\n\n9 min\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2024\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "[placeholder]"
-  },
-  {
-    "objectID": "about.html#configuration-specification-language-csl-files",
-    "href": "about.html#configuration-specification-language-csl-files",
-    "title": "About",
-    "section": "2.1 Configuration Specification Language (CSL) Files",
-    "text": "2.1 Configuration Specification Language (CSL) Files\nThe csl style comes from a slightly modified version of Vodohospodářské technicko-ekonomické informace (English) (2016-03-10 11:08:39); the original version can be downloaded from Zotero’s style repository."
-  },
-  {
-    "objectID": "about.html#fonts",
-    "href": "about.html#fonts",
-    "title": "About",
-    "section": "2.2 Fonts",
-    "text": "2.2 Fonts\nThe font for code blocks is Iosevka, specifically this version.\nThe body font the Schola theme of the TeX Gyre collection, which can be found here.\nTo download the TeX Gyre fonts I’ve used, click here."
-  },
-  {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "1 Contributing Guidelines",
-    "section": "",
-    "text": "1 Contributing Guidelines\nThe author(s) of this repository appreciate external feedback and contributions. To improve this feedback process, we urge you to read and adhere to the following guidelines:\n\nProvide clear, evidenced arguments for your changes, where possible this will aid future onlookers in understanding why certain features came to be the way they are. Additionally, this facilitates the author(s) in learning why and how they’ve erred. Finally, taking the time to make your arguments clearer can prevent the creation of feedback that is misguided, incorrect, or inadequate relative to other possible changes.\n\n[additional guidelines pending]"
-  },
-  {
     "objectID": "posts/AMLRMFTIP-UPX3/index.html",
     "href": "posts/AMLRMFTIP-UPX3/index.html",
     "title": "A Multilevel Regression Model For Tornadoes, In Python",
@@ -75,5 +33,40 @@
     "title": "A Multilevel Regression Model For Tornadoes, In Python",
     "section": "3.2 McElreath Multilevel Modelling",
     "text": "3.2 McElreath Multilevel Modelling\nDescription from pp. 400 of the 2nd edition of Statistical Rethinking:\n\nThese models remember features of each cluster in the data as they learn about all of the clusters. Depending upon the variation among clusters, which is learned from the data as well, the model pools information across clusters. This pooling tends to improve estimates about each cluster. This improved estimation leads to several, more prag- matic sounding, benefits of the multilevel approach. I mentioned them in Chapter 1. They are worth repeating.\n\nImproved estimates for repeat sampling. When more than one observation arises from the same individual, location, or time, then traditional, single-level models either maximally underfit or overfit the data.\nImproved estimates for imbalance in sampling. When some individuals, locations, or times are sampled more than others, multilevel models automatically cope with differing uncertainty across these clusters. This prevents over-sampled clusters from unfairly dominating inference.\nEstimates of variation. If our research questions include variation among individu- also or other groups within the data, then multilevel models are a big help, because they model variation explicitly.\nAvoid averaging, retain variation. Frequently, scholars pre-average some data to construct variables. This can be dangerous, because averaging removes variation, and there are also typically several different ways to perform the averaging. Aver- aging therefore both manufactures false confidence and introduces arbitrary datatransformations. Multilevel models allow us to preserve the uncertainty and avoid data transformations\n\n\nDescription from pp. 401 of the 2nd edition of Statistical Rethinking:\n\nRethinking: A model by any other name. Multilevel models go by many different names, and some statisticians use the same names for different specialized variants, while others use them all inter- changeably. The most common synonyms for “multilevel” are hierarchical and mixed effects. The type of parameters that appear in multilevel models are most commonly known as random ef- fects, which itself can mean very different things to different analysts and in different contexts.193 And even the innocent term “level” can mean different things to different people. There’s really no cure for this swamp of vocabulary aside from demanding a mathematical or algorithmic definition of the model. Otherwise, there will always be ambiguity"
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "1 Contributing Guidelines",
+    "section": "",
+    "text": "1 Contributing Guidelines\nThe author(s) of this repository appreciate external feedback and contributions. To improve this feedback process, we urge you to read and adhere to the following guidelines:\n\nProvide clear, evidenced arguments for your changes, where possible this will aid future onlookers in understanding why certain features came to be the way they are. Additionally, this facilitates the author(s) in learning why and how they’ve erred. Finally, taking the time to make your arguments clearer can prevent the creation of feedback that is misguided, incorrect, or inadequate relative to other possible changes.\n\n[additional guidelines pending]"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "[placeholder]"
+  },
+  {
+    "objectID": "about.html#configuration-specification-language-csl-files",
+    "href": "about.html#configuration-specification-language-csl-files",
+    "title": "About",
+    "section": "2.1 Configuration Specification Language (CSL) Files",
+    "text": "2.1 Configuration Specification Language (CSL) Files\nThe csl style comes from a slightly modified version of Vodohospodářské technicko-ekonomické informace (English) (2016-03-10 11:08:39); the original version can be downloaded from Zotero’s style repository."
+  },
+  {
+    "objectID": "about.html#fonts",
+    "href": "about.html#fonts",
+    "title": "About",
+    "section": "2.2 Fonts",
+    "text": "2.2 Fonts\nThe font for code blocks is Iosevka, specifically this version.\nThe body font the Schola theme of the TeX Gyre collection, which can be found here.\nTo download the TeX Gyre fonts I’ve used, click here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A STATISTICAL MODELING GUILD",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nA Multilevel Regression Model For Tornadoes, In Python\n\n\n\n\n\nPlaceholder.\n\n\n\n\n\nSep 1, 2024\n\n\n9 min\n\n\n\n\n\n\nNo matching items"
   }
 ]
