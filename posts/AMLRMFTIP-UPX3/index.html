@@ -8,7 +8,7 @@
 
 <meta name="author" content="AFg6K7h4fhy2">
 <meta name="dcterms.date" content="2024-09-01">
-<meta name="description" content="Placeholder.">
+<meta name="description" content="This model is the first in a series of statistical models for forecasting tornadoes, as part of a question featured on Metaculus.">
 
 <title>A Multilevel Regression Model For Tornadoes, In Python – A STATISTICAL MODELING GUILD</title>
 <style>
@@ -196,7 +196,7 @@ window.Quarto = {
       <h1 class="title">A Multilevel Regression Model For Tornadoes, In Python</h1>
                   <div>
         <div class="description">
-          <em>Placeholder.</em>
+          <em>This model is the first in a series of statistical models for forecasting tornadoes, as part of a question featured on Metaculus.</em>
         </div>
       </div>
                           <div class="quarto-categories">
@@ -296,7 +296,7 @@ window.Quarto = {
 <p>To adequately incorporate information across these categories, we can create a <a href="https://en.wikipedia.org/wiki/Multilevel_model">multilevel model</a>. For each relevant category (<code>State</code>, <code>Month</code>, <code>Year</code>) available to us, we want to estimate its intercept and internal variation (e.g., across each <code>State</code>, how does tornado count vary?).</p>
 <p>Since we are estimating tornado <em>counts</em>, a <a href="https://en.wikipedia.org/wiki/Poisson_distribution">Poisson distribution</a> seems appropriate.</p>
 <p>Proceeding, let <span class="math inline">\(\alpha_i\)</span> denote the random effect of the location of state <span class="math inline">\(i\)</span> on expected tornado count. Further, let <span class="math inline">\(\gamma_j\)</span> and <span class="math inline">\(\delta_k\)</span> denote the random of effects of month <span class="math inline">\(j\)</span> on and year <span class="math inline">\(k\)</span>, respectively, on expected tornado count. Let the expected tornado count for state <span class="math inline">\(i\)</span>, month <span class="math inline">\(j\)</span>, and year <span class="math inline">\(k\)</span> be called <span class="math inline">\(Y_{ijk}\)</span>.</p>
-<p>The tornado count <span class="math inline">\(T_{ijk}\)</span> for state <span class="math inline">\(i\)</span>, month <span class="math inline">\(j\)</span>, and year <span class="math inline">\(k\)</span> can be modelled via <span class="math inline">\(T_{ijk} \sim \text{Poisson}(Y_{ijk})\)</span>, where <span class="math inline">\(\log (Y_{ijk}) = \alpha_{\textsc{state}[i]} + \gamma_{\textsc{month}[j]} + \delta_{\textsc{year}[k]}\)</span>, i.e.&nbsp;<span class="math inline">\(Y_{ijk}\)</span> is <a href="https://en.wikipedia.org/wiki/Log-linear_model">log-linear</a>.</p>
+<p>The tornado count <span class="math inline">\(T_{ijk}\)</span> for state <span class="math inline">\(i\)</span>, month <span class="math inline">\(j\)</span>, and year <span class="math inline">\(k\)</span> can be modelled via <span class="math inline">\(T_{ijk} \sim \text{Poisson}(Y_{ijk})\)</span>, where <span class="math inline">\(\log (Y_{ijk}) = \alpha_{\text{state}[i]} + \gamma_{\text{month}[j]} + \delta_{\text{year}[k]}\)</span>, i.e.&nbsp;<span class="math inline">\(Y_{ijk}\)</span> is <a href="https://en.wikipedia.org/wiki/Log-linear_model">log-linear</a>.</p>
 <p>Note that the author is “uncertain” regarding what constitute “appropriate” priors distributions and parameter values to use for a model on tornadoes. Note also that the author explores these decisions somewhat via a <a href="https://en.wikipedia.org/wiki/Sensitivity_analysis">sensitivity analysis</a>. The prior values for the hyperparameters <span class="math inline">\(\overline{\alpha}\)</span>, <span class="math inline">\(\overline{\gamma}\)</span>, and <span class="math inline">\(\overline{\delta}\)</span> represent the author’s best guess that state effects vary more than year effects vary more than month effects, with respect to tornado count.</p>
 <p>Adaptive priors:</p>
 <p><span class="math display">\[

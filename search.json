@@ -46,7 +46,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "[placeholder]"
+    "text": "This website contains descriptions and some documentation for models that the author and friends have built.\nThe Author And Friends\n\nAFg6K7h4fhy2\nliaxon\nJoseph-GitHub101\nPurple Fern\n\nThe Modeling Repositories\n\nForecasting-Tornadoes"
   },
   {
     "objectID": "about.html#configuration-specification-language-csl-files",
@@ -60,13 +60,13 @@
     "href": "about.html#fonts",
     "title": "About",
     "section": "2.2 Fonts",
-    "text": "2.2 Fonts\nThe font for code blocks is Iosevka, specifically this version.\nThe body font the Schola theme of the TeX Gyre collection, which can be found here.\nTo download the TeX Gyre fonts I’ve used, click here."
+    "text": "2.2 Fonts\nThe font for code blocks is Iosevka, specifically this version. The body font the Schola theme of the TeX Gyre collection, which can be found here. To download the TeX Gyre fonts I’ve used, click here."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "A STATISTICAL MODELING GUILD",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nA Multilevel Regression Model For Tornadoes, In Python\n\n\n\n\n\nPlaceholder.\n\n\n\n\n\nSep 1, 2024\n\n\n9 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nA Multilevel Regression Model For Tornadoes, In Python\n\n\n\n\n\nThis model is the first in a series of statistical models for forecasting tornadoes, as part of a question featured on Metaculus.\n\n\n\n\n\nSep 1, 2024\n\n\n9 min\n\n\n\n\n\n\nNo matching items"
   }
 ]
