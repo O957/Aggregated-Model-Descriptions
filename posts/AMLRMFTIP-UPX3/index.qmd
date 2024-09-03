@@ -1,6 +1,6 @@
 ---
 title: "A Multilevel Regression Model For Tornadoes, In Python"
-description: "_Placeholder._"
+description: "_This model is the first in a series of statistical models for forecasting tornadoes, as part of a question featured on Metaculus._"
 date: "2024-09-01"
 date-modified: "2024-09-01"
 bibliography: references.bib
@@ -43,7 +43,7 @@ Since we are estimating tornado _counts_, a [Poisson distribution](https://en.wi
 
 Proceeding, let $\alpha_i$ denote the random effect of the location of state $i$ on expected tornado count. Further, let $\gamma_j$ and $\delta_k$ denote the random of effects of month $j$ on and year $k$, respectively, on expected tornado count. Let the expected tornado count for state $i$, month $j$, and year $k$ be called $Y_{ijk}$.
 
-The tornado count $T_{ijk}$ for state $i$, month $j$, and year $k$ can be modelled via $T_{ijk} \sim \text{Poisson}(Y_{ijk})$, where $\log (Y_{ijk}) = \alpha_{\textsc{state}[i]} + \gamma_{\textsc{month}[j]} + \delta_{\textsc{year}[k]}$, i.e. $Y_{ijk}$ is [log-linear](https://en.wikipedia.org/wiki/Log-linear_model).
+The tornado count $T_{ijk}$ for state $i$, month $j$, and year $k$ can be modelled via $T_{ijk} \sim \text{Poisson}(Y_{ijk})$, where $\log (Y_{ijk}) = \alpha_{\text{state}[i]} + \gamma_{\text{month}[j]} + \delta_{\text{year}[k]}$, i.e. $Y_{ijk}$ is [log-linear](https://en.wikipedia.org/wiki/Log-linear_model).
 
 Note that the author is "uncertain" regarding what constitute "appropriate" priors distributions and parameter values to use for a model on tornadoes. Note also that the author explores these decisions somewhat via a [sensitivity analysis](https://en.wikipedia.org/wiki/Sensitivity_analysis). The prior values for the hyperparameters $\overline{\alpha}$, $\overline{\gamma}$, and $\overline{\delta}$ represent the author's best guess that state effects vary more than year effects vary more than month effects, with respect to tornado count.
 

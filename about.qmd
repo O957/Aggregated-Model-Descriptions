@@ -6,8 +6,18 @@ date-modified: "2024-09-01"
 
 # This Repository
 
-[placeholder]
+This website contains descriptions and some documentation for models that the author and friends have built.
 
+_The Author And Friends_
+
+* [AFg6K7h4fhy2](https://github.com/AFg6K7h4fhy2)
+* [liaxon](https://github.com/liaxon)
+* [Joseph-GitHub101](https://github.com/Joseph-GitHub101)
+* [Purple Fern](https://github.com/emmakat1998)
+
+_The Modeling Repositories_
+
+* [Forecasting-Tornadoes](https://github.com/AFg6K7h4fhy2/Forecasting-Tornadoes)
 
 # Content Attribution
 
@@ -17,8 +27,4 @@ The `csl` style comes from a slightly modified version of Vodohospodářské tec
 
 ## Fonts
 
-The font for code blocks is [Iosevka](https://github.com/be5invis/Iosevka), specifically [this version](https://github.com/be5invis/Iosevka/releases/download/v30.3.2/PkgTTF-Iosevka-30.3.2.zip).
-
-The body font the Schola theme of the [TeX Gyre](https://www.gust.org.pl/projects/e-foundry/tex-gyre) collection, which can be found [here](https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola/index_html).
-
-To download the TeX Gyre fonts I've used, click [here](https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola/qcs2.005otf.zip).
+The font for code blocks is [Iosevka](https://github.com/be5invis/Iosevka), specifically [this version](https://github.com/be5invis/Iosevka/releases/download/v30.3.2/PkgTTF-Iosevka-30.3.2.zip). The body font the Schola theme of the [TeX Gyre](https://www.gust.org.pl/projects/e-foundry/tex-gyre) collection, which can be found [here](https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola/index_html). To download the TeX Gyre fonts I've used, click [here](https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola/qcs2.005otf.zip).
