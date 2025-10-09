@@ -2,7 +2,7 @@
 name = "aggregated-model-descriptions"
 version = "0.0.1"
 description = "A website with descriptions and some documentation for models that the author and friends have built. "
-authors = ["AFg6K7h4fhy2 <127630341+AFg6K7h4fhy2@users.noreply.github.com>"]
+authors = ["O957 <127630341+O957@users.noreply.github.com>"]
 readme = "README.md"
 license = "MIT"
 package-mode = false

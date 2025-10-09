@@ -10,14 +10,14 @@ This website contains descriptions and some documentation for models that the au
 
 _The Author And Friends_
 
-* [AFg6K7h4fhy2](https://github.com/AFg6K7h4fhy2)
+* [O957](https://github.com/O957)
 * [liaxon](https://github.com/liaxon)
 * [Joseph-GitHub101](https://github.com/Joseph-GitHub101)
 * [Purple Fern](https://github.com/emmakat1998)
 
 _The Modeling Repositories_
 
-* [Forecasting-Tornadoes](https://github.com/AFg6K7h4fhy2/Forecasting-Tornadoes)
+* [Forecasting-Tornadoes](https://github.com/O957/Forecasting-Tornadoes)
 
 # Content Attribution
 

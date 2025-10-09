@@ -8,11 +8,11 @@ link-citations: true
 categories: [modeling, data-science, mathematics]
 csl: "../../assets/csls/vodohospodarske-technicko-ekonomicke-informace-en_MODIFIED.csl"
 author:
-  - name: AFg6K7h4fhy2
-    url: https://github.com/AFg6K7h4fhy2
+  - name: O957
+    url: https://github.com/O957
     affiliation: Independent
 citation:
-  url: https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html
+  url: https://O957.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html
 ---
 
 # Introduction
@@ -28,9 +28,9 @@ As with (likely) most of the other models in this repository, their raison d'êt
 
 By the time you are reading this, the question has very likely closed. Also, given that the open upper bound on the question begins at 300 and that the National Oceanic and Atmospheric Administration's ([NOAA](https://www.noaa.gov/)) [Storm Prediction Center](https://www.spc.noaa.gov/climo/summary/) reports 310 as the number of preliminary tornadoes across the USA in April 2024, you might be saying to yourself, how can this brief report help me? Well dear forecaster, should a similar question come up on Metaculus, even if it is not necessarily about tornadoes, then the following discussion—on [multilevel modelling](https://en.wikipedia.org/wiki/Multilevel_model)—might enable you to produce better, more statistically informed Metaculus forecasts. There is additionally an argument to be made that $$P(\text{Finds The Below Interesting } | \text{ Participates On Metaculus})$$ is high...but you can always stop reading at any time.
 
-Before we begin, though, the author wants to note that NOAA does indeed permit data downloading; however, this process is quite tedious and annoying! Please commend the author on their patience manually copying the data into text files. The data available for use in modelling includes tornado, wind, and hail counts for each state, by month and year (1950 to 2024). Find the data [here](https://github.com/AFg6K7h4fhy2/Forecasting-Tornadoes/tree/dev-118777/data/clean). The author downloaded the _preliminary_ report values (given that this is the forecasting target for question 22307) for January 2019 to March 2024. Final reports were not downloaded since for many months across many states in the distant past, these report values are still not available.
+Before we begin, though, the author wants to note that NOAA does indeed permit data downloading; however, this process is quite tedious and annoying! Please commend the author on their patience manually copying the data into text files. The data available for use in modelling includes tornado, wind, and hail counts for each state, by month and year (1950 to 2024). Find the data [here](https://github.com/O957/Forecasting-Tornadoes/tree/dev-118777/data/clean). The author downloaded the _preliminary_ report values (given that this is the forecasting target for question 22307) for January 2019 to March 2024. Final reports were not downloaded since for many months across many states in the distant past, these report values are still not available.
 
-_The author is still maturing mathematically_, so (please!) gaze upon the statistical sections with skeptical eyes. Note as well that the author operates by [Crocker's Rules](https://www.lesswrong.com/tag/crockers-rules), so criticism is welcome. To critique, please make a new issue [here](https://github.com/AFg6K7h4fhy2/Forecasting-Tornadoes/issues). The following was informed in part from Richard McElreath's 13th chapter of [Statistical Rethinking](https://www.taylorfrancis.com/books/mono/10.1201/9780429029608/statistical-rethinking-richard-mcelreath) [@mcelreath2018statistical]
+_The author is still maturing mathematically_, so (please!) gaze upon the statistical sections with skeptical eyes. Note as well that the author operates by [Crocker's Rules](https://www.lesswrong.com/tag/crockers-rules), so criticism is welcome. To critique, please make a new issue [here](https://github.com/O957/Forecasting-Tornadoes/issues). The following was informed in part from Richard McElreath's 13th chapter of [Statistical Rethinking](https://www.taylorfrancis.com/books/mono/10.1201/9780429029608/statistical-rethinking-richard-mcelreath) [@mcelreath2018statistical]
 
 
 # Model(s)
