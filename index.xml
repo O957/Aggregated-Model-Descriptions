@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>A STATISTICAL MODELING GUILD</title>
-<link>https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/</link>
-<atom:link href="https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://O957.github.io/Aggregated-Model-Descriptions/</link>
+<atom:link href="https://O957.github.io/Aggregated-Model-Descriptions/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website containing descriptions, documentation, and demonstrations for models that the author and friends have built.</description>
-<generator>quarto-1.5.57</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Sun, 01 Sep 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>A Multilevel Regression Model For Tornadoes, In Python</title>
-  <dc:creator>AFg6K7h4fhy2 </dc:creator>
-  <link>https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/posts/AMLRMFTIP-UPX3/</link>
+  <dc:creator>O957 </dc:creator>
+  <link>https://O957.github.io/Aggregated-Model-Descriptions/posts/AMLRMFTIP-UPX3/</link>
   <description><![CDATA[ 
 
 
@@ -30,8 +30,8 @@
 <p>The question will resolve as the number of tornadoes shown for the month of April 2024 when accessed by Metaculus on May 3, 2024. If there is a discrepancy between the “Map” and “Tables” views, the question resolves to the figure displayed on the “Map” view.</p>
 </blockquote>
 <p>By the time you are reading this, the question has very likely closed. Also, given that the open upper bound on the question begins at 300 and that the National Oceanic and Atmospheric Administration’s (<a href="https://www.noaa.gov/">NOAA</a>) <a href="https://www.spc.noaa.gov/climo/summary/">Storm Prediction Center</a> reports 310 as the number of preliminary tornadoes across the USA in April 2024, you might be saying to yourself, how can this brief report help me? Well dear forecaster, should a similar question come up on Metaculus, even if it is not necessarily about tornadoes, then the following discussion—on <a href="https://en.wikipedia.org/wiki/Multilevel_model">multilevel modelling</a>—might enable you to produce better, more statistically informed Metaculus forecasts. There is additionally an argument to be made that <img src="https://latex.codecogs.com/png.latex?P(%5Ctext%7BFinds%20The%20Below%20Interesting%20%7D%20%7C%20%5Ctext%7B%20Participates%20On%20Metaculus%7D)"> is high…but you can always stop reading at any time.</p>
-<p>Before we begin, though, the author wants to note that NOAA does indeed permit data downloading; however, this process is quite tedious and annoying! Please commend the author on their patience manually copying the data into text files. The data available for use in modelling includes tornado, wind, and hail counts for each state, by month and year (1950 to 2024). Find the data <a href="https://github.com/AFg6K7h4fhy2/Forecasting-Tornadoes/tree/dev-118777/data/clean">here</a>. The author downloaded the <em>preliminary</em> report values (given that this is the forecasting target for question 22307) for January 2019 to March 2024. Final reports were not downloaded since for many months across many states in the distant past, these report values are still not available.</p>
-<p><em>The author is still maturing mathematically</em>, so (please!) gaze upon the statistical sections with skeptical eyes. Note as well that the author operates by <a href="https://www.lesswrong.com/tag/crockers-rules">Crocker’s Rules</a>, so criticism is welcome. To critique, please make a new issue <a href="https://github.com/AFg6K7h4fhy2/Forecasting-Tornadoes/issues">here</a>. The following was informed in part from Richard McElreath’s 13th chapter of <a href="https://www.taylorfrancis.com/books/mono/10.1201/9780429029608/statistical-rethinking-richard-mcelreath">Statistical Rethinking</a> <span class="citation" data-cites="mcelreath2018statistical">[1]</span></p>
+<p>Before we begin, though, the author wants to note that NOAA does indeed permit data downloading; however, this process is quite tedious and annoying! Please commend the author on their patience manually copying the data into text files. The data available for use in modelling includes tornado, wind, and hail counts for each state, by month and year (1950 to 2024). Find the data <a href="https://github.com/O957/Forecasting-Tornadoes/tree/dev-118777/data/clean">here</a>. The author downloaded the <em>preliminary</em> report values (given that this is the forecasting target for question 22307) for January 2019 to March 2024. Final reports were not downloaded since for many months across many states in the distant past, these report values are still not available.</p>
+<p><em>The author is still maturing mathematically</em>, so (please!) gaze upon the statistical sections with skeptical eyes. Note as well that the author operates by <a href="https://www.lesswrong.com/tag/crockers-rules">Crocker’s Rules</a>, so criticism is welcome. To critique, please make a new issue <a href="https://github.com/O957/Forecasting-Tornadoes/issues">here</a>. The following was informed in part from Richard McElreath’s 13th chapter of <a href="https://www.taylorfrancis.com/books/mono/10.1201/9780429029608/statistical-rethinking-richard-mcelreath">Statistical Rethinking</a> <span class="citation" data-cites="mcelreath2018statistical">[1]</span></p>
 </section>
 <section id="models" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Model(s)</h1>
@@ -49,7 +49,7 @@
 <p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Baligned%7D%0A%5Csigma_%7B%5Calpha%7D,%20%5Csigma_%7B%5Cgamma%7D,%20%5Csigma_%7B%5Cdelta%7D%20&amp;%5Csim%20%5Ctext%7BExponential%7D(1.0)%20%20%5C%5C%0A%5Csigma_%7B%5Coverline%7B%5Calpha%7D%7D,%20%5Csigma_%7B%5Coverline%7B%5Cgamma%7D%7D,%20%5Csigma_%7B%5Coverline%7B%5Cdelta%7D%7D%20&amp;%5Csim%20%5Cmathcal%7BU%7D(0.0,%206.0)%0A%5Cend%7Baligned%7D%0A"></p>
 <section id="implementation" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="implementation"><span class="header-section-number">2.1</span> Implementation</h2>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">def</span> model_01(states<span class="op" style="color: #5E5E5E;
@@ -225,7 +225,7 @@ font-style: inherit;">=</span>num_tornados):</span>
 background-color: null;
 font-style: inherit;">"obs"</span>, dist.Poisson(Y), obs<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>tornadoes)</span></code></pre></div>
+font-style: inherit;">=</span>tornadoes)</span></code></pre></div></div>
 </section>
 <section id="inference" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="inference"><span class="header-section-number">2.2</span> Inference</h2>
@@ -308,22 +308,22 @@ font-style: inherit;">=</span>tornadoes)</span></code></pre></div>
 [1] MCELREATH, R. <em>Statistical rethinking: A bayesian course with examples in r and stan</em>. B.m.: Chapman; Hall/CRC, 2018.
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{2024,
-  author = {, AFg6K7h4fhy2},
+  author = {, O957},
   title = {A {Multilevel} {Regression} {Model} {For} {Tornadoes,} {In}
     {Python}},
   date = {2024-09-01},
-  url = {https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html},
+  url = {https://O957.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html},
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-2024" class="csl-entry quarto-appendix-citeas">
-[1] A. <em>A Multilevel Regression Model For Tornadoes, In Python</em>
-[online]. 1. September 2024. Retrieved from: <a href="https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html">https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html.
+[1] O. <em>A Multilevel Regression Model For Tornadoes, In Python</em>
+[online]. 1. September 2024. Retrieved from: <a href="https://O957.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html">https://O957.github.io/Aggregated-Model-Descriptions/AMLRMFTIP-UPX3/index.html.
 </a>
 </div></div></section></div> ]]></description>
   <category>modeling</category>
   <category>data-science</category>
   <category>mathematics</category>
-  <guid>https://afg6k7h4fhy2.github.io/Aggregated-Model-Descriptions/posts/AMLRMFTIP-UPX3/</guid>
+  <guid>https://O957.github.io/Aggregated-Model-Descriptions/posts/AMLRMFTIP-UPX3/</guid>
   <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
