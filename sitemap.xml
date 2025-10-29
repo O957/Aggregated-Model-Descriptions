@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://O957.github.io/Aggregated-Model-Descriptions/about.html</loc>
-    <lastmod>2025-10-09T05:23:31.368Z</lastmod>
-  </url>
-  <url>
-    <loc>https://O957.github.io/Aggregated-Model-Descriptions/index.html</loc>
-    <lastmod>2025-10-09T05:23:31.499Z</lastmod>
-  </url>
-  <url>
-    <loc>https://O957.github.io/Aggregated-Model-Descriptions/CONTRIBUTING.html</loc>
-    <lastmod>2025-10-09T05:23:31.368Z</lastmod>
+    <loc>https://O957.github.io/Aggregated-Model-Descriptions/CODE_OF_CONDUCT.html</loc>
+    <lastmod>2025-10-29T23:38:21.115Z</lastmod>
   </url>
   <url>
     <loc>https://O957.github.io/Aggregated-Model-Descriptions/posts/AMLRMFTIP-UPX3/index.html</loc>
-    <lastmod>2025-10-09T05:23:31.500Z</lastmod>
+    <lastmod>2025-10-29T23:38:21.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://O957.github.io/Aggregated-Model-Descriptions/CONTRIBUTING.html</loc>
+    <lastmod>2025-10-29T23:38:21.115Z</lastmod>
+  </url>
+  <url>
+    <loc>https://O957.github.io/Aggregated-Model-Descriptions/index.html</loc>
+    <lastmod>2025-10-29T23:38:21.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://O957.github.io/Aggregated-Model-Descriptions/about.html</loc>
+    <lastmod>2025-10-29T23:38:21.115Z</lastmod>
   </url>
 </urlset>
