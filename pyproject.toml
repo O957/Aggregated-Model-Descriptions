@@ -1,17 +1,22 @@
-[tool.poetry]
-name = "aggregated-model-descriptions"
+[project]
+name = "o957-examples"
 version = "0.0.1"
-description = "A website with descriptions and some documentation for models that the author and friends have built. "
-authors = ["O957 <127630341+O957@users.noreply.github.com>"]
+authors = [
+  {name = "O957", email = "127630341+O957@users.noreply.github.com"},
+]
+description = "Examples, including models and diagrams, that I designed and which are small enough to not warrant their own repositories."
+license = "Apache-2.0"
 readme = "README.md"
-license = "MIT"
-package-mode = false
+keywords = ["data-science", "statistics", "modeling", "inference", "forecasting" ]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.3.5",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-pre-commit = "^3.7.0"
+[project.urls]
+Repository = "https://github.com/O957/O957-Examples"
+Issues = "https://github.com/O957/O957-Examples/issues"
+"Author GitHub" = "https://github.com/O957"
 
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.ruff.lint.mccabe]
+max-complexity = 12
