@@ -9,9 +9,7 @@ license = "Apache-2.0"
 readme = "README.md"
 keywords = ["data-science", "statistics", "modeling", "inference", "forecasting" ]
 requires-python = ">=3.13"
-dependencies = [
-    "numpy>=2.3.5",
-]
+dependencies = []
 
 [project.urls]
 Repository = "https://github.com/O957/O957-Examples"
