@@ -1,0 +1,12 @@
+# Example 1.1.1 From Robert-TBCFRDTFTCI-ED2-2007
+
+On page 2, a model for forest fires is given:
+
+$$p = \frac{\mathtt{exp}(\alpha_1 h + \alpha_2 t + \alpha_3 x)}{1 + \mathtt{exp}(\alpha_1 h + \alpha_2 t + \alpha_3 x)}}$$
+
+where:
+
+* $p$ is the probability of a fire
+* $h$ is the humidity rate
+* $t$ is the average temperature
+* $x$ is the degree of management of the forecast
